@@ -138,7 +138,7 @@ class Bot():
         resp1 = urllib2.urlopen(url)
         cookies = getCookies(resp1)
         data = resp1.read()
-        f1 = '_csrf = "'
+        f1 = '_csrf="'
         f2 = '", _fb'
         csrf = data[data.find(f1) + len(f1):data.find(f2)]
 
